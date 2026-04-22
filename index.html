@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mitesh's Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ================= HEADER (STICKY) ================= */
+.header {
+    background-color: #1f2933;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.4s ease;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* NAVIGATION LINKS */
+.nav-links a {
+    color: #93c5fd;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #fbbf24;
+    transform: translateY(-3px);
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(to right, #dbeafe, #e0f2fe);
+    padding: 80px 0;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #1e3a8a;
+    transition: color 0.4s ease;
+}
+
+.hero h1:hover {
+    color: #2563eb;
+}
+
+.hero p {
+    margin: 20px auto;
+    max-width: 700px;
+    font-size: 18px;
+}
+
+.hero img {
+    width: 320px;
+    max-width: 100%;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+    transform: translateY(-3px);
+}
+
+/* ================= ABOUT ================= */
+.about {
+    background: white;
+    padding: 70px 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ================= FEATURES ================= */
+.features {
+    background-color: #fff7ed;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature-box {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+.feature-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #1f2933;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ================= FADE IN ANIMATION ================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}c
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="container">
+        <div class="logo">Mitesh's Website</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="login.html">Login</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="container">
+        <h1>Learn Web Development Easily 🚀</h1>
+        <p>
+            Welcome to Mitesh’s learning platform where beginners can
+            learn HTML and web design step by step.
+        </p>
+
+        <img src="https://via.placeholder.com/350x220?text=Learn+HTML">
+        <br>
+        <a href="course.html" class="btn">Explore Courses</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+    <div class="container">
+        <h2>About This Website 👨‍💻</h2>
+        <p>
+            This website helps beginners understand web development
+            with simple structure and practical examples.
+        </p>
+    </div>
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+    <div class="container">
+        <h2>Why Learn Here? ⭐</h2>
+
+        <div class="feature-container">
+            <div class="feature-box">
+                <img src="image1.png">
+                <h3>Simple Lessons</h3>
+                <p>Easy explanations for beginners.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="image3.jpg">
+                <h3>Practical Projects</h3>
+                <p>Build real websites confidently.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="mitesh2.png">
+                <h3>Step by Step</h3>
+                <p>Clear and structured learning path.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Mitesh | Beginner Web Development Platform
+</div>
+
+</body>
+</html>
